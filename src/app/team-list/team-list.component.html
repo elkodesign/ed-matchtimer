@@ -1,0 +1,9 @@
+<table class="table table-striped table-hover">
+  <tbody>
+    <tr *ngFor="let item of [{o:4},{o:'hasjas'},{o:4},{o:4},{o:4}]; index as i;" (click)="item.isChecked=!item.isChecked">
+      <td><input type="checkbox" [checked]="item.isChecked"></td>
+      <td>{{i+1}} - Naam van het item<p class="small">Metadata van het item</p></td>
+      <td class="opt"><span class="glyphicon glyphicon-star"></span></td>
+    </tr>
+  </tbody>
+</table>
