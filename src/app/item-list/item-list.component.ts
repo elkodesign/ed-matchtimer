@@ -11,7 +11,7 @@ export class ItemListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.items = [{'title':'Lorem ipsum'}, {'title':'Dolor sit'}]
+    this.items = [{'title':'Lorem ipsum'}, {'title':'Dolor sit'}];
   }
 
 }
