@@ -1,0 +1,23 @@
+<table class="table table-condensed table-striped">
+  <thead>
+    <tr>
+      <th class="fw-check"><input type="checkbox" /></th>
+      <th *ngFor="let col of cols">{{ col.title }}</th>
+      <th class="fw-options">&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of data">
+      <td class="fw-check"><input type="checkbox" name="check" /></td>
+      <td *ngFor="let col of cols">{{ item[col.alias] }}</td>
+      <td class="fw-options">
+        <a href="" title="Bewerken">E</a>
+        <a href="" title="Verwijderen">D</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- 
+  <p>[cols: {{ cols }}]</p>
+  <p>[data: {{ data }}]</p>
+-->
